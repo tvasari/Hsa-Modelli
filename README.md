@@ -1,6 +1,8 @@
 # Hsa-Modelli
 
+
 CONFIRMATION RESERVATION STANDARD RATE
+
 Dear XXX,
 
 with this email we are glad to confirm your reservation for a XXX room in our XXX building with/without breakfast included from XXX    to XXX at the price of XXX€ + 4€ per person per night of city tax.
