@@ -19,5 +19,7 @@ You will pay directly at the hotel in the way that you prefer.
 
 For any other enquiries do not hesitate to contact us.
 
+
 Best regards,
+
 Hotel Sant'Angelo
