@@ -17,9 +17,9 @@ elif len(sys.argv) == 2 and sys.argv[1] != list:
     MODELLI[sys.argv[1]] == pyperclip.paste
 else:
     print('''Usage: salva <parola-chiave> - Salva il testo copiato nella parola-chiave.
-                   <parola-chiave> - Copia negli appunti il testo associato alla parola-chiave.
-                   list - Copia negli appunti una lista delle parole-chiave.
-                   cancella <parola-chiave> - Cancella la parola-chiave ed il suo contenuto dal database''')
+                    <parola-chiave> - Copia negli appunti il testo associato alla parola-chiave.
+                    list - Copia negli appunti una lista delle parole-chiave.
+                    cancella <parola-chiave> - Cancella la parola-chiave ed il suo contenuto dal database''')
     
 
 MODELLI.close()
