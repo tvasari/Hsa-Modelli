@@ -1,8 +1,8 @@
 #! python3
 # mcb.pyw - Usage: salva <parola-chiave> - Salva il testo copiato nella parola-chiave.
-                   <parola-chiave> - Copia negli appunti il testo associato alla parola-chiave.
-                   list - Copia negli appunti una lista delle parole-chiave.
-                   cancella <parola-chiave> - Cancella la parola-chiave ed il suo contenuto dal database.
+#                  <parola-chiave> - Copia negli appunti il testo associato alla parola-chiave.
+#                  list - Copia negli appunti una lista delle parole-chiave.
+#                  cancella <parola-chiave> - Cancella la parola-chiave ed il suo contenuto dal database.
 import sys, pyperclip, shelve
 
 MODELLI = shelve.open(mcb)
