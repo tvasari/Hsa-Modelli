@@ -1,9 +1,25 @@
-import sys, pyperclip
+#! python3
+# mcb.pyw - Usage: salva <parola-chiave> - Salva il testo copiato nella parola-chiave.
+                   <parola-chiave> - Copia negli appunti il testo associato alla parola-chiave.
+                   list - Copia negli appunti una lista delle parole-chiave.
+                   cancella <parola-chiave> - Cancella la parola-chiave ed il suo contenuto dal database.
+import sys, pyperclip, shelve
 
-MODELLI = {}
+MODELLI = shelve.open(mcb)
 
-parola_chiave = sys.argv[1]
+if len(sys.argv) == 3 and sys.argv[1].lower() == 'salva':
+    MODELLI[sys.argv[2]] = pyperclip.paste()
+elif len(sys.argv) == 3 and sys.argv[1].lower() == 'cancella':
+    del MODELLI[sys.argv[2]]
+elif len(sys.argv) == 2 and sys.argv[1] == list:
+    pyperclip.copy(list(MODELLI.keys())
+elif len(sys.argv) == 2 and sys.argv[1] != list:
+    MODELLI[sys.argv[1]] == pyperclip.paste
+else:
+    print('''Usage: salva <parola-chiave> - Salva il testo copiato nella parola-chiave.
+                   <parola-chiave> - Copia negli appunti il testo associato alla parola-chiave.
+                   list - Copia negli appunti una lista delle parole-chiave.
+                   cancella <parola-chiave> - Cancella la parola-chiave ed il suo contenuto dal database''')
+    
 
-if len(sys.argv) < 2:
-    print('inserire parola-chiave per copiare un modello negli appunti.')
-
+MODELLI.close()
